@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Registrasi</title>
+    <style>
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    background-color: #ede8ff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: white;
+    width: 380px;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+.card h2{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.subtitle{
+    text-align: center;
+    font-size: 11px;
+    color: #888;
+    margin-bottom: 25px;
+}
+form label{
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 12px;
+}
+form input, form select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 12px;
+}
+form input::placeholder{
+    color: #aaa;
+}
+form select{
+    color: #666;
+    background-color: white;
+}
+form button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 11px;
+    background-color: #1a56ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: #0f46e0;
+}
+      </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Registrasi Akun Belajar</h2>
+        <p class="subtitle">Lengkapi formulir di bawah ini dengan benar</p>
+
+        <form>
+            <label>Nama Lengkap</label>
+            <input type="text" placeholder="Masukkan nama lengkap">
+
+            <label>Alamat Email</label>
+            <input type="email" placeholder="nama@contoh.com">
+
+            <label>Kata Sandi</label>
+            <input type="password" placeholder="Minimal 8 karakter">
+
+            <label>Konfirmasi Kata Sandi</label>
+            <input type="password" placeholder="Ulangi kata sandi">
+
+            <label>Status Pengguna</label>
+            <select>
+                <option>Pilih status</option>
+                <option>Pelajar</option>
+                <option>Pengajar</option>
+                <option>Umum</option>
+            </select>
+
+            <button type="submit">Daftar</button>
+        </form>
+    </div>
+</body>
+</html>
